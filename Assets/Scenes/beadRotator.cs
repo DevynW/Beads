@@ -15,7 +15,7 @@ public class beadRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 rot = new Vector3 (beadChain.transform.rotation.x, beadChain.transform.rotation.y + 3, beadChain.transform.rotation.z);
+        Vector3 rot = new Vector3 (beadChain.transform.rotation.x, beadChain.transform.rotation.y + rotationFactor, beadChain.transform.rotation.z);
         beadChain.transform.Rotate(rot * Time.deltaTime);
     }
 }
